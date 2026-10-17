@@ -2,7 +2,7 @@ name: Gold signals
 
 on:
   schedule:
-    - cron: "*/15 * * * 1-5"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
