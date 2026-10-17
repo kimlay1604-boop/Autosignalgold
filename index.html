@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold Signals</title>
+<style>
+  :root {
+    --bg: #0b0d1a; --card: #1e2040; --card2: #262950; --text: #eef0ff; --muted: #8a8fb5;
+    --buy: #2ecc71; --sell: #ff5d6c; --win: #f5a623; --loss: #ff4d5e; --open: #5aa9ff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 20px 16px 8px; max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 22px; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .banner { background: #3a2a10; color: #ffcf7a; border-radius: 8px; padding: 8px 12px; font-size: 13px; margin-top: 10px; display: none; }
+  .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .stat { background: var(--card); border-radius: 10px; padding: 10px 14px; min-width: 90px; }
+  .stat b { display: block; font-size: 20px; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 40px; display: grid; gap: 14px;
+         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .card { background: var(--card); border-radius: 14px; padding: 16px; border: 1px solid #2d3060; }
+  .top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .sym { font-weight: 800; font-size: 18px; letter-spacing: .3px; }
+  .side { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+  .side.BUY { background: rgba(46,204,113,.18); color: var(--buy); }
+  .side.SELL { background: rgba(255,93,108,.18); color: var(--sell); }
+  .status { text-align: right; font-weight: 800; font-size: 14px; margin-bottom: 8px; min-height: 18px; }
+  .status.WIN { color: var(--win); } .status.SLHIT { color: var(--loss); } .status.OPEN { color: var(--open); }
+  .row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 15px; }
+  .row span:first-child { color: var(--muted); }
+  .row b { font-variant-numeric: tabular-nums; font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .time { margin-top: 8px; color: var(--muted); font-size: 12px; }
+  .view { background: var(--card); border-radius: 12px; padding: 12px 14px; margin-top: 14px; display: none; font-size: 14px; line-height: 1.45; }
+  .view b.BUY { color: var(--buy); } .view b.SELL { color: var(--sell); } .view b.WAIT { color: var(--muted); }
+  .view small { color: var(--muted); }
+  .ai { margin-top: 10px; padding-top: 10px; border-top: 1px solid #2d3060; font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+  .ai b { color: var(--text); }
+  .empty { grid-column: 1/-1; color: var(--muted); text-align: center; padding: 40px 0; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 30px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<header>
+  <h1>XAU/USD Signals</h1>
+  <div class="sub" id="meta">Loading…</div>
+  <div class="banner" id="demo">DEMO MODE: prices are randomly generated, not real market data.</div>
+  <div class="view" id="view"></div>
+  <div class="stats" id="stats"></div>
+</header>
+<main id="grid"></main>
+<footer>
+  Educational use only. Signals come from a simple EMA/RSI rule and are not financial advice.
+  Past results do not predict future results. Trading leveraged products can lose more than you expect;
+  test on a demo account first.
+</footer>
+<script>
+const fmt = n => Number(n).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const label = s => s === "WIN" ? "WIN · TP hit" : s === "SL HIT" ? "SL HIT" : "OPEN";
+
+function card(s) {
+  const sign = s.side === "BUY" ? 1 : -1;
+  const t = new Date(s.time).toLocaleString([], {month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
+  const cls = s.status.replace(" ", "");
+  return `<div class="card">
+    <div class="top"><span class="sym">${s.symbol}</span><span class="side ${s.side}">${s.side}</span></div>
+    <div class="status ${cls}">${label(s.status)}</div>
+    <div class="row"><span>Entry</span><b>${fmt(s.entry)}</b></div>
+    <div class="row"><span>Stop</span><b>${fmt(s.stop)} (${s.stop_pips})</b></div>
+    <div class="row"><span>Target</span><b>${fmt(s.target)} (+${s.target_pips})</b></div>
+    <div class="time">${t}</div>
+    ${s.ai ? `<div class="ai"><b>AI ${s.ai.confidence}%</b> · ${esc(s.ai.reason)}</div>` : ""}
+  </div>`;
+}
+
+async function load() {
+  try {
+    const r = await fetch("signals.json?_=" + Date.now());
+    const d = await r.json();
+    const {wins, losses, open} = d.stats, closed = wins + losses;
+    document.getElementById("meta").textContent =
+      `Last price ${fmt(d.last_price)} · updated ${new Date(d.updated).toLocaleTimeString()}`;
+    document.getElementById("demo").style.display = d.demo ? "block" : "none";
+    const v = document.getElementById("view");
+    if (d.market_view) {
+      v.style.display = "block";
+      v.innerHTML = `<b>AI market view:</b> <b class="${d.market_view.verdict}">${d.market_view.verdict}</b> <small>(${d.market_view.confidence}% sure)</small><br>${esc(d.market_view.reason)}`;
+    } else v.style.display = "none";
+    document.getElementById("stats").innerHTML =
+      [["Wins", wins], ["Losses", losses], ["Open", open],
+       ["Win rate", closed ? Math.round(wins / closed * 100) + "%" : "–"]]
+      .map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("");
+    document.getElementById("grid").innerHTML =
+      d.signals.length ? d.signals.map(card).join("") : '<div class="empty">No signals yet.</div>';
+  } catch (e) {
+    document.getElementById("meta").textContent = "Can't read signals.json. Run bot.py and open this page through python -m http.server.";
+  }
+}
+load();
+setInterval(load, 30000);
+</script>
+</body>
+</html>
