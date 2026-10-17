@@ -1,0 +1,175 @@
+{
+  "updated": "2026-10-17T15:47:35.428856+00:00",
+  "demo": false,
+  "ai": false,
+  "last_price": 4181.1,
+  "prices": {
+    "XAU/USD": 4181.1,
+    "BTC/USD": 81329.05
+  },
+  "market_view": {},
+  "view_bar": {},
+  "rejected": [],
+  "stats": {
+    "wins": 5,
+    "losses": 5,
+    "open": 1
+  },
+  "stats_by_symbol": {
+    "XAU/USD": {
+      "wins": 3,
+      "losses": 1,
+      "open": 0
+    },
+    "BTC/USD": {
+      "wins": 2,
+      "losses": 4,
+      "open": 1
+    }
+  },
+  "signals": [
+    {
+      "id": "BTC-202610171115",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-17T11:15:00+00:00",
+      "entry": 81445.2,
+      "stop": 81587.18,
+      "target": 81232.23,
+      "stop_pips": 142,
+      "target_pips": 213,
+      "status": "OPEN",
+      "closed_at": null
+    },
+    {
+      "id": "BTC-202610170815",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-10-17T08:15:00+00:00",
+      "entry": 81611.8,
+      "stop": 81460.58,
+      "target": 81838.62,
+      "stop_pips": 151,
+      "target_pips": 227,
+      "status": "SL HIT",
+      "closed_at": "2026-10-17T10:00:00+00:00"
+    },
+    {
+      "id": "202610161645",
+      "symbol": "XAU/USD",
+      "side": "SELL",
+      "time": "2026-10-16T16:45:00+00:00",
+      "entry": 4182.2,
+      "stop": 4192.2,
+      "target": 4167.2,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "SL HIT",
+      "closed_at": "2026-10-16T19:30:00+00:00"
+    },
+    {
+      "id": "BTC-202610161500",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-16T15:00:00+00:00",
+      "entry": 81622.71,
+      "stop": 82170.38,
+      "target": 80801.2,
+      "stop_pips": 548,
+      "target_pips": 822,
+      "status": "WIN",
+      "closed_at": "2026-10-16T17:15:00+00:00"
+    },
+    {
+      "id": "BTC-202610151515",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-10-15T15:15:00+00:00",
+      "entry": 82268.21,
+      "stop": 81427.29,
+      "target": 83529.59,
+      "stop_pips": 841,
+      "target_pips": 1261,
+      "status": "SL HIT",
+      "closed_at": "2026-10-16T15:00:00+00:00"
+    },
+    {
+      "id": "202610150030",
+      "symbol": "XAU/USD",
+      "side": "BUY",
+      "time": "2026-10-15T00:30:00+00:00",
+      "entry": 4164.8,
+      "stop": 4154.8,
+      "target": 4179.8,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "WIN",
+      "closed_at": "2026-10-15T02:45:00+00:00"
+    },
+    {
+      "id": "BTC-202610141230",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-14T12:30:00+00:00",
+      "entry": 82763.9,
+      "stop": 83300.19,
+      "target": 81959.47,
+      "stop_pips": 536,
+      "target_pips": 804,
+      "status": "WIN",
+      "closed_at": "2026-10-14T14:00:00+00:00"
+    },
+    {
+      "id": "BTC-202610141200",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-10-14T12:00:00+00:00",
+      "entry": 83757.32,
+      "stop": 83385.05,
+      "target": 84315.72,
+      "stop_pips": 372,
+      "target_pips": 558,
+      "status": "SL HIT",
+      "closed_at": "2026-10-14T12:30:00+00:00"
+    },
+    {
+      "id": "BTC-202610141000",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-14T10:00:00+00:00",
+      "entry": 83223.79,
+      "stop": 83632.35,
+      "target": 82610.94,
+      "stop_pips": 409,
+      "target_pips": 613,
+      "status": "SL HIT",
+      "closed_at": "2026-10-14T12:00:00+00:00"
+    },
+    {
+      "id": "202610131400",
+      "symbol": "XAU/USD",
+      "side": "SELL",
+      "time": "2026-10-13T14:00:00+00:00",
+      "entry": 4193.0,
+      "stop": 4203.0,
+      "target": 4178.0,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "WIN",
+      "closed_at": "2026-10-13T16:45:00+00:00"
+    },
+    {
+      "id": "202610130330",
+      "symbol": "XAU/USD",
+      "side": "BUY",
+      "time": "2026-10-13T03:30:00+00:00",
+      "entry": 4207.4,
+      "stop": 4197.4,
+      "target": 4222.4,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "WIN",
+      "closed_at": "2026-10-13T05:00:00+00:00"
+    }
+  ]
+}
