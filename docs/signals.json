@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-22T21:59:02.653689+00:00",
+  "updated": "2026-10-23T00:24:39.052071+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 4039.8,
+  "last_price": 4041.5,
   "prices": {
-    "XAU/USD": 4039.8,
-    "BTC/USD": 81371.63
+    "XAU/USD": 4041.5,
+    "BTC/USD": 81054.1
   },
   "market_view": {},
   "view_bar": {},
