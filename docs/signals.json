@@ -1,33 +1,59 @@
 {
-  "updated": "2026-10-26T06:57:46.956372+00:00",
+  "updated": "2026-10-26T13:49:29.387440+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 4021.9,
+  "last_price": 4016.3,
   "prices": {
-    "XAU/USD": 4021.9,
-    "BTC/USD": 79936.73
+    "XAU/USD": 4016.3,
+    "BTC/USD": 79574.32
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
     "wins": 19,
-    "losses": 20,
+    "losses": 23,
     "open": 1
   },
   "stats_by_symbol": {
     "XAU/USD": {
       "wins": 8,
-      "losses": 6,
-      "open": 1
+      "losses": 8,
+      "open": 0
     },
     "BTC/USD": {
       "wins": 11,
-      "losses": 14,
-      "open": 0
+      "losses": 15,
+      "open": 1
     }
   },
   "signals": [
+    {
+      "id": "BTC-202610261345",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-26T13:45:00+00:00",
+      "entry": 79574.32,
+      "stop": 80037.51,
+      "target": 78879.54,
+      "stop_pips": 463,
+      "target_pips": 695,
+      "status": "OPEN",
+      "closed_at": null
+    },
+    {
+      "id": "BTC-202610260930",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-10-26T09:30:00+00:00",
+      "entry": 80425.21,
+      "stop": 79986.15,
+      "target": 81083.8,
+      "stop_pips": 439,
+      "target_pips": 659,
+      "status": "SL HIT",
+      "closed_at": "2026-10-26T13:00:00+00:00"
+    },
     {
       "id": "202610260530",
       "symbol": "XAU/USD",
@@ -38,8 +64,21 @@
       "target": 4039.4,
       "stop_pips": 100,
       "target_pips": 150,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "SL HIT",
+      "closed_at": "2026-10-26T13:30:00+00:00"
+    },
+    {
+      "id": "202610260430",
+      "symbol": "XAU/USD",
+      "side": "BUY",
+      "time": "2026-10-26T04:30:00+00:00",
+      "entry": 4025.9,
+      "stop": 4015.9,
+      "target": 4040.9,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "SL HIT",
+      "closed_at": "2026-10-26T13:30:00+00:00"
     },
     {
       "id": "BTC-202610252130",
