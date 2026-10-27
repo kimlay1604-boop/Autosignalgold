@@ -1,33 +1,72 @@
 {
-  "updated": "2026-10-26T23:19:55.870229+00:00",
+  "updated": "2026-10-27T02:12:45.490923+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 4024.7,
+  "last_price": 4025.4,
   "prices": {
-    "XAU/USD": 4024.7,
-    "BTC/USD": 79794.83
+    "XAU/USD": 4025.4,
+    "BTC/USD": 79920.05
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
-    "wins": 19,
-    "losses": 27,
-    "open": 1
+    "wins": 20,
+    "losses": 28,
+    "open": 3
   },
   "stats_by_symbol": {
     "XAU/USD": {
       "wins": 8,
-      "losses": 8,
+      "losses": 9,
       "open": 0
     },
     "BTC/USD": {
-      "wins": 11,
+      "wins": 12,
       "losses": 19,
-      "open": 1
+      "open": 3
     }
   },
   "signals": [
+    {
+      "id": "BTC-202610270145",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-27T01:45:00+00:00",
+      "entry": 79926.77,
+      "stop": 80298.48,
+      "target": 79369.2,
+      "stop_pips": 372,
+      "target_pips": 558,
+      "status": "OPEN",
+      "closed_at": null
+    },
+    {
+      "id": "BTC-202610270130",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-10-27T01:30:00+00:00",
+      "entry": 80151.91,
+      "stop": 79798.03,
+      "target": 80682.74,
+      "stop_pips": 354,
+      "target_pips": 531,
+      "status": "OPEN",
+      "closed_at": null
+    },
+    {
+      "id": "202610262330",
+      "symbol": "XAU/USD",
+      "side": "SELL",
+      "time": "2026-10-26T23:30:00+00:00",
+      "entry": 4022.9,
+      "stop": 4032.9,
+      "target": 4007.9,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "SL HIT",
+      "closed_at": "2026-10-27T00:00:00+00:00"
+    },
     {
       "id": "BTC-202610261845",
       "symbol": "BTC/USD",
@@ -196,6 +235,19 @@
       "target_pips": 391,
       "status": "WIN",
       "closed_at": "2026-10-25T03:15:00+00:00"
+    },
+    {
+      "id": "BTC-202610231815",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-23T18:15:00+00:00",
+      "entry": 81462.01,
+      "stop": 81877.13,
+      "target": 80839.33,
+      "stop_pips": 415,
+      "target_pips": 623,
+      "status": "WIN",
+      "closed_at": "2026-10-23T22:45:00+00:00"
     },
     {
       "id": "BTC-202610231515",
