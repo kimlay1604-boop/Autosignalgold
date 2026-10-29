@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-28T23:42:45.514152+00:00",
+  "updated": "2026-10-29T02:52:51.318945+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 4064.4,
+  "last_price": 4055.3,
   "prices": {
-    "XAU/USD": 4064.4,
-    "BTC/USD": 81251.74
+    "XAU/USD": 4055.3,
+    "BTC/USD": 79799.01
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
     "wins": 26,
-    "losses": 37,
+    "losses": 40,
     "open": 1
   },
   "stats_by_symbol": {
@@ -23,11 +23,24 @@
     },
     "BTC/USD": {
       "wins": 14,
-      "losses": 24,
+      "losses": 27,
       "open": 1
     }
   },
   "signals": [
+    {
+      "id": "BTC-202610290145",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-29T01:45:00+00:00",
+      "entry": 79915.64,
+      "stop": 80334.75,
+      "target": 79286.98,
+      "stop_pips": 419,
+      "target_pips": 629,
+      "status": "OPEN",
+      "closed_at": null
+    },
     {
       "id": "202610281930",
       "symbol": "XAU/USD",
@@ -51,8 +64,8 @@
       "target": 81926.43,
       "stop_pips": 446,
       "target_pips": 669,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "SL HIT",
+      "closed_at": "2026-10-29T01:00:00+00:00"
     },
     {
       "id": "202610281515",
@@ -339,6 +352,32 @@
       "target_pips": 301,
       "status": "WIN",
       "closed_at": "2026-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "BTC-202610252100",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-10-25T21:00:00+00:00",
+      "entry": 80385.96,
+      "stop": 80596.82,
+      "target": 80069.68,
+      "stop_pips": 211,
+      "target_pips": 316,
+      "status": "SL HIT",
+      "closed_at": "2026-10-25T22:00:00+00:00"
+    },
+    {
+      "id": "BTC-202610251700",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-10-25T17:00:00+00:00",
+      "entry": 80675.26,
+      "stop": 80420.24,
+      "target": 81057.79,
+      "stop_pips": 255,
+      "target_pips": 383,
+      "status": "SL HIT",
+      "closed_at": "2026-10-25T20:00:00+00:00"
     },
     {
       "id": "BTC-202610251630",
