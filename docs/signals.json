@@ -1,33 +1,59 @@
 {
-  "updated": "2026-11-03T21:15:20.881704+00:00",
+  "updated": "2026-11-04T01:23:19.650661+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 3931.1,
+  "last_price": 3946.9,
   "prices": {
-    "XAU/USD": 3931.1,
-    "BTC/USD": 77754.67
+    "XAU/USD": 3946.9,
+    "BTC/USD": 76857.53
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
     "wins": 36,
-    "losses": 56,
+    "losses": 59,
     "open": 1
   },
   "stats_by_symbol": {
     "XAU/USD": {
       "wins": 16,
-      "losses": 19,
-      "open": 1
+      "losses": 22,
+      "open": 0
     },
     "BTC/USD": {
       "wins": 20,
       "losses": 37,
-      "open": 0
+      "open": 1
     }
   },
   "signals": [
+    {
+      "id": "BTC-202611040100",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-11-04T01:00:00+00:00",
+      "entry": 76787.09,
+      "stop": 77249.97,
+      "target": 76092.77,
+      "stop_pips": 463,
+      "target_pips": 694,
+      "status": "OPEN",
+      "closed_at": null
+    },
+    {
+      "id": "202611032345",
+      "symbol": "XAU/USD",
+      "side": "BUY",
+      "time": "2026-11-03T23:45:00+00:00",
+      "entry": 3947.2,
+      "stop": 3937.2,
+      "target": 3962.2,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "SL HIT",
+      "closed_at": "2026-11-04T00:30:00+00:00"
+    },
     {
       "id": "202611032015",
       "symbol": "XAU/USD",
@@ -38,8 +64,21 @@
       "target": 3917.6,
       "stop_pips": 100,
       "target_pips": 150,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "SL HIT",
+      "closed_at": "2026-11-03T23:00:00+00:00"
+    },
+    {
+      "id": "202611032000",
+      "symbol": "XAU/USD",
+      "side": "SELL",
+      "time": "2026-11-03T20:00:00+00:00",
+      "entry": 3928.4,
+      "stop": 3938.4,
+      "target": 3913.4,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "SL HIT",
+      "closed_at": "2026-11-03T21:30:00+00:00"
     },
     {
       "id": "202611031345",
