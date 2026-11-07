@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-07T07:46:22.832251+00:00",
+  "updated": "2026-11-07T14:29:10.994717+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 4079.5,
+  "last_price": 4074.9,
   "prices": {
-    "XAU/USD": 4079.5,
-    "BTC/USD": 75930.92
+    "XAU/USD": 4074.9,
+    "BTC/USD": 75829.47
   },
   "market_view": {},
   "view_bar": {},
@@ -28,6 +28,19 @@
     }
   },
   "signals": [
+    {
+      "id": "BTC-202611071300",
+      "symbol": "BTC/USD",
+      "side": "SELL",
+      "time": "2026-11-07T13:00:00+00:00",
+      "entry": 75741.71,
+      "stop": 75890.26,
+      "target": 75518.88,
+      "stop_pips": 149,
+      "target_pips": 223,
+      "status": "OPEN",
+      "closed_at": null
+    },
     {
       "id": "BTC-202611070015",
       "symbol": "BTC/USD",
@@ -64,8 +77,8 @@
       "target": 75259.36,
       "stop_pips": 314,
       "target_pips": 472,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "SL HIT",
+      "closed_at": "2026-11-07T08:45:00+00:00"
     },
     {
       "id": "BTC-202611062330",
@@ -1301,19 +1314,6 @@
       "target_pips": 213,
       "status": "WIN",
       "closed_at": "2026-10-17T15:45:00+00:00"
-    },
-    {
-      "id": "BTC-202610170830",
-      "symbol": "BTC/USD",
-      "side": "BUY",
-      "time": "2026-10-17T08:30:00+00:00",
-      "entry": 81559.0,
-      "stop": 81411.04,
-      "target": 81780.94,
-      "stop_pips": 148,
-      "target_pips": 222,
-      "status": "SL HIT",
-      "closed_at": "2026-10-17T12:15:00+00:00"
     },
     {
       "id": "202610161645",
