@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-15T22:14:38.703835+00:00",
+  "updated": "2026-11-16T02:08:39.491275+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 3886.3,
+  "last_price": 3873.9,
   "prices": {
-    "XAU/USD": 3886.3,
-    "BTC/USD": 65143.23
+    "XAU/USD": 3873.9,
+    "BTC/USD": 64897.3
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
     "wins": 35,
-    "losses": 75,
-    "open": 1
+    "losses": 76,
+    "open": 0
   },
   "stats_by_symbol": {
     "XAU/USD": {
@@ -23,8 +23,8 @@
     },
     "BTC/USD": {
       "wins": 17,
-      "losses": 42,
-      "open": 1
+      "losses": 43,
+      "open": 0
     }
   },
   "signals": [
@@ -38,8 +38,8 @@
       "target": 65645.66,
       "stop_pips": 449,
       "target_pips": 673,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "SL HIT",
+      "closed_at": "2026-11-16T01:45:00+00:00"
     },
     {
       "id": "BTC-202611151600",
