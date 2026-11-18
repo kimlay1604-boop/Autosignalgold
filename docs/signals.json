@@ -1,33 +1,46 @@
 {
-  "updated": "2026-11-17T19:48:31.353991+00:00",
+  "updated": "2026-11-18T01:56:56.716316+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 3852.8,
+  "last_price": 3812.9,
   "prices": {
-    "XAU/USD": 3852.8,
-    "BTC/USD": 63703.28
+    "XAU/USD": 3812.9,
+    "BTC/USD": 64284.0
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
-    "wins": 35,
-    "losses": 81,
-    "open": 2
+    "wins": 36,
+    "losses": 82,
+    "open": 0
   },
   "stats_by_symbol": {
     "XAU/USD": {
-      "wins": 19,
+      "wins": 20,
       "losses": 38,
-      "open": 1
+      "open": 0
     },
     "BTC/USD": {
       "wins": 16,
-      "losses": 43,
-      "open": 1
+      "losses": 44,
+      "open": 0
     }
   },
   "signals": [
+    {
+      "id": "BTC-202611172300",
+      "symbol": "BTC/USD",
+      "side": "BUY",
+      "time": "2026-11-17T23:00:00+00:00",
+      "entry": 65076.56,
+      "stop": 64526.67,
+      "target": 65901.39,
+      "stop_pips": 550,
+      "target_pips": 825,
+      "status": "SL HIT",
+      "closed_at": "2026-11-18T01:00:00+00:00"
+    },
     {
       "id": "202611171830",
       "symbol": "XAU/USD",
@@ -38,8 +51,8 @@
       "target": 3846.1,
       "stop_pips": 100,
       "target_pips": 150,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "WIN",
+      "closed_at": "2026-11-17T20:00:00+00:00"
     },
     {
       "id": "BTC-202611171600",
@@ -51,8 +64,8 @@
       "target": 63028.74,
       "stop_pips": 743,
       "target_pips": 1114,
-      "status": "OPEN",
-      "closed_at": null
+      "status": "SL HIT",
+      "closed_at": "2026-11-17T23:00:00+00:00"
     },
     {
       "id": "202611171545",
@@ -1288,19 +1301,6 @@
       "target_pips": 531,
       "status": "SL HIT",
       "closed_at": "2026-10-27T02:30:00+00:00"
-    },
-    {
-      "id": "BTC-202610270100",
-      "symbol": "BTC/USD",
-      "side": "BUY",
-      "time": "2026-10-27T01:00:00+00:00",
-      "entry": 80186.35,
-      "stop": 79875.61,
-      "target": 80652.45,
-      "stop_pips": 311,
-      "target_pips": 466,
-      "status": "SL HIT",
-      "closed_at": "2026-10-27T02:00:00+00:00"
     },
     {
       "id": "202610262345",
