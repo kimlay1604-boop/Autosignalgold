@@ -1,24 +1,24 @@
 {
-  "updated": "2026-11-20T04:05:52.848652+00:00",
+  "updated": "2026-11-20T12:48:30.019167+00:00",
   "demo": false,
   "ai": false,
-  "last_price": 3551.1,
+  "last_price": 3571.7,
   "prices": {
-    "XAU/USD": 3551.1,
-    "BTC/USD": 61795.28
+    "XAU/USD": 3571.7,
+    "BTC/USD": 61526.85
   },
   "market_view": {},
   "view_bar": {},
   "rejected": [],
   "stats": {
     "wins": 37,
-    "losses": 82,
+    "losses": 83,
     "open": 0
   },
   "stats_by_symbol": {
     "XAU/USD": {
       "wins": 20,
-      "losses": 39,
+      "losses": 40,
       "open": 0
     },
     "BTC/USD": {
@@ -133,6 +133,19 @@
       "closed_at": "2026-11-17T15:00:00+00:00"
     },
     {
+      "id": "202611171030",
+      "symbol": "XAU/USD",
+      "side": "SELL",
+      "time": "2026-11-17T10:30:00+00:00",
+      "entry": 3862.8,
+      "stop": 3872.8,
+      "target": 3847.8,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "SL HIT",
+      "closed_at": "2026-11-17T11:45:00+00:00"
+    },
+    {
       "id": "202611171015",
       "symbol": "XAU/USD",
       "side": "SELL",
@@ -183,6 +196,19 @@
       "target_pips": 150,
       "status": "SL HIT",
       "closed_at": "2026-11-17T04:30:00+00:00"
+    },
+    {
+      "id": "202611170245",
+      "symbol": "XAU/USD",
+      "side": "BUY",
+      "time": "2026-11-17T02:45:00+00:00",
+      "entry": 3872.8,
+      "stop": 3862.8,
+      "target": 3887.8,
+      "stop_pips": 100,
+      "target_pips": 150,
+      "status": "WIN",
+      "closed_at": "2026-11-17T05:30:00+00:00"
     },
     {
       "id": "BTC-202611170215",
@@ -1561,19 +1587,6 @@
       "target_pips": 150,
       "status": "WIN",
       "closed_at": "2026-10-13T16:45:00+00:00"
-    },
-    {
-      "id": "202610130330",
-      "symbol": "XAU/USD",
-      "side": "BUY",
-      "time": "2026-10-13T03:30:00+00:00",
-      "entry": 4207.4,
-      "stop": 4197.4,
-      "target": 4222.4,
-      "stop_pips": 100,
-      "target_pips": 150,
-      "status": "WIN",
-      "closed_at": "2026-10-13T05:00:00+00:00"
     }
   ]
 }
